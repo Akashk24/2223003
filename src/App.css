@@ -1,0 +1,110 @@
+/* ✅ Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Bungee", sans-serif; /* ✅ Applied globally */
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  height: 100vh; /* full screen height */
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+}
+
+/* ✅ If you want to apply font only in some places, use this class */
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-box {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+input {
+  flex: 1;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+  min-width: 250px;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #218838;
+}
+
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(0, 255, 100, 0.1);
+  border-radius: 8px;
+}
+
+.result a {
+  color: #00ffcc;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 1rem;
+}
+
+/* ✅ Navbar (top right corner) */
+.navbar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  background: rgba(13, 190, 116, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.navbar li {
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar li:hover {
+  color: #00ffcc;
+}
